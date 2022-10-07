@@ -2,12 +2,18 @@
   "name": "@adobe/remark-gridtables",
   "version": "0.0.1",
   "description": "Remark Gridtables",
+  "keywords": [
+    "remark",
+    "markdown",
+    "table",
+    "gridtables",
+    "unify"
+  ],
   "main": "src/index.js",
   "type": "module",
   "scripts": {
     "test": "c8 mocha",
     "lint": "eslint .",
-    "docs": "npx jsdoc2md -c .jsdoc.json --files 'src/*.js'  > docs/API.md",
     "semantic-release": "semantic-release",
     "prepare": "husky install"
   },
@@ -15,35 +21,40 @@
     "type": "git",
     "url": "https://github.com/adobe/remark-gridtables"
   },
-  "author": "",
   "license": "Apache-2.0",
   "bugs": {
     "url": "https://github.com/adobe/remark-gridtables/issues"
   },
   "homepage": "https://github.com/adobe/remark-gridtables#readme",
   "mocha": {
-    "require": "test/setup-env.js",
     "recursive": "true",
     "reporter": "mocha-multi-reporters",
     "reporter-options": "configFile=.mocha-multi.json"
   },
+  "dependencies": {
+    "@adobe/mdast-util-gridtables": "^1.0.0",
+    "@adobe/micromark-extension-gridtables": "^1.0.1"
+  },
   "devDependencies": {
-    "@adobe/eslint-config-helix": "1.3.2",
     "@semantic-release/changelog": "6.0.1",
     "@semantic-release/git": "10.0.1",
     "@semantic-release/npm": "9.0.1",
     "c8": "7.12.0",
-    "codecov": "3.8.3",
     "eslint": "8.24.0",
+    "eslint-config-airbnb-base": "15.0.0",
     "eslint-plugin-header": "3.1.1",
     "eslint-plugin-import": "2.26.0",
     "husky": "8.0.1",
-    "jsdoc-to-markdown": "7.1.1",
     "junit-report-builder": "3.0.1",
     "lint-staged": "13.0.3",
+    "mdast-builder": "1.1.1",
     "mocha": "10.0.0",
     "mocha-multi-reporters": "1.5.1",
-    "semantic-release": "19.0.5"
+    "remark-parse": "10.0.1",
+    "remark-stringify": "10.0.2",
+    "semantic-release": "19.0.5",
+    "unified": "10.1.2",
+    "unist-util-visit": "4.1.1"
   },
   "lint-staged": {
     "*.js": "eslint",
