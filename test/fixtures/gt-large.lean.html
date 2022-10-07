@@ -1,0 +1,50 @@
+<h2>Large Grid Table</h2>
+<table>
+    <tr>
+        <th>A1</th>
+        <th>B1</th>
+        <th>
+            <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
+        </th>
+    </tr>
+    <tr>
+        <td>
+            <h2>My Heading 1</h2>
+            <p>
+                <img src="https://hlx.blob.core.windows.net/external/19c0cf25413106c81920d75078ee2ef30a55d52e7" alt=""><br>Lorem ipsum dolor <strong>sit amet</strong>, consectetur adipiscing elit. Vivamus rhoncus elit nibh, sed vestibulum metus tincidunt a. <em>Integer</em> interdum tempus consectetur. Phasellus tristique auctor tortor, tincidunt semper odio blandit eu. Proin et aliquet est. Curabitur ac augue ornare, iaculis sem luctus, feugiat tellus.<br>0 1 2 3 4 5 6 7 8 9 0 a b c d e f 0 1 2 3 4 5 6 7 8 9 0 a b c d e f
+            </p>
+        </td>
+        <td>
+            <pre><code class="language-js">for (const row of this.rows) {
+  for (let i = 0; i &#x3C; row.length; i += 1) {
+    let col = cols[i];
+    if (!col) {
+      col = {};
+      cols.push(col);
+    }
+    const cell = row[i];
+    if (cell.value) {
+      col.size = Math.max(col.size || 0, cell.value.length);
+    }
+  }
+}
+</code></pre>
+        </td>
+        <td>
+            <blockquote>
+                <p>My quote</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus rhoncus elit nibh, sed vestibulum metus tincidunt a.</p>
+            </blockquote>
+            <ul>
+                <li>item one</li>
+                <li>item two</li>
+                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus rhoncus elit nibh, sed vestibulum metus tincidunt a.</li>
+            </ul>
+        </td>
+    </tr>
+    <tr>
+        <td>a3</td>
+        <td>b3</td>
+        <td><strong>30 Years.</strong> That's a lot.</td>
+    </tr>
+</table>

@@ -1,0 +1,23 @@
+## Large Grid Table
+
++--------------------------------------------------------------------------------------------+----------------------------------------------------------------+-------------------------------------------------------------+
+| A1                                                                                         | B1                                                             | ## Lorem ipsum dolor sit amet, consectetur adipiscing elit. |
++============================================================================================+================================================================+=============================================================+
+| ## My Heading 1                                                                            | ```js                                                          | > My quote                                                  |
+|                                                                                            | for (const row of this.rows) {                                 | >                                                           |
+| ![](https://hlx.blob.core.windows.net/external/19c0cf25413106c81920d75078ee2ef30a55d52e7)\ |   for (let i = 0; i < row.length; i \+= 1) {                   | > Lorem ipsum dolor sit amet, consectetur adipiscing elit.  |
+| Lorem ipsum dolor **sit amet**, consectetur adipiscing elit. Vivamus rhoncus elit nibh,    |     let col = cols[i];                                         | > Vivamus rhoncus elit nibh, sed vestibulum metus tincidunt |
+| sed vestibulum metus tincidunt a. _Integer_ interdum tempus consectetur. Phasellus         |     if (!col) {                                                | > a.                                                        |
+| tristique auctor tortor, tincidunt semper odio blandit eu. Proin et aliquet est. Curabitur |       col = {};                                                |                                                             |
+| ac augue ornare, iaculis sem luctus, feugiat tellus.\                                      |       cols.push(col);                                          | -   item one                                                |
+| 0 1 2 3 4 5 6 7 8 9 0 a b c d e f 0 1 2 3 4 5 6 7 8 9 0 a b c d e f                        |     }                                                          | -   item two                                                |
+|                                                                                            |     const cell = row[i];                                       | -   Lorem ipsum dolor sit amet, consectetur adipiscing      |
+|                                                                                            |     if (cell.value) {                                          |     elit. Vivamus rhoncus elit nibh, sed vestibulum metus   |
+|                                                                                            |       col.size = Math.max(col.size \|\| 0, cell.value.length); |     tincidunt a.                                            |
+|                                                                                            |     }                                                          |                                                             |
+|                                                                                            |   }                                                            |                                                             |
+|                                                                                            | }                                                              |                                                             |
+|                                                                                            | ```                                                            |                                                             |
++--------------------------------------------------------------------------------------------+----------------------------------------------------------------+-------------------------------------------------------------+
+| a3                                                                                         | b3                                                             | **30 Years.** That's a lot.                                 |
++--------------------------------------------------------------------------------------------+----------------------------------------------------------------+-------------------------------------------------------------+
