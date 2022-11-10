@@ -32,7 +32,7 @@
     "reporter-options": "configFile=.mocha-multi.json"
   },
   "dependencies": {
-    "@adobe/mdast-util-gridtables": "^1.0.0",
+    "@adobe/mdast-util-gridtables": "^1.0.3",
     "@adobe/micromark-extension-gridtables": "^1.0.1"
   },
   "devDependencies": {
@@ -50,7 +50,10 @@
     "mdast-builder": "1.1.1",
     "mocha": "10.1.0",
     "mocha-multi-reporters": "1.5.1",
+    "rehype-format": "4.0.1",
+    "rehype-stringify": "9.0.3",
     "remark-parse": "10.0.1",
+    "remark-rehype": "10.1.0",
     "remark-stringify": "10.0.2",
     "semantic-release": "19.0.5",
     "unified": "10.1.2",
