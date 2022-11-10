@@ -58,6 +58,8 @@ const outputMarkdown = unified()
   .stringify(mdast);
 ```
 
+Also see the [test/example.js](./test/example.js) on how to generate HTML tables.
+
 ## Overview
 
 GridTables look like this:
