@@ -46,7 +46,7 @@
     "eslint-plugin-import": "2.27.5",
     "husky": "8.0.3",
     "junit-report-builder": "3.0.1",
-    "lint-staged": "13.2.1",
+    "lint-staged": "13.2.2",
     "mdast-builder": "1.1.1",
     "mocha": "10.2.0",
     "mocha-multi-reporters": "1.5.1",
@@ -55,7 +55,7 @@
     "remark-parse": "10.0.1",
     "remark-rehype": "10.1.0",
     "remark-stringify": "10.0.2",
-    "semantic-release": "21.0.1",
+    "semantic-release": "21.0.2",
     "unified": "10.1.2",
     "unist-util-visit": "4.1.2"
   },
