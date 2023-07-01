@@ -40,7 +40,7 @@
     "@semantic-release/git": "10.0.1",
     "@semantic-release/npm": "10.0.4",
     "c8": "8.0.0",
-    "eslint": "8.43.0",
+    "eslint": "8.44.0",
     "eslint-config-airbnb-base": "15.0.0",
     "eslint-plugin-header": "3.1.1",
     "eslint-plugin-import": "2.27.5",
@@ -55,7 +55,7 @@
     "remark-parse": "10.0.2",
     "remark-rehype": "10.1.0",
     "remark-stringify": "10.0.3",
-    "semantic-release": "21.0.5",
+    "semantic-release": "21.0.6",
     "unified": "10.1.2",
     "unist-util-visit": "4.1.2"
   },
