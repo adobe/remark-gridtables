@@ -55,7 +55,7 @@
     "remark-parse": "10.0.2",
     "remark-rehype": "10.1.0",
     "remark-stringify": "10.0.3",
-    "semantic-release": "21.0.6",
+    "semantic-release": "21.0.7",
     "unified": "10.1.2",
     "unist-util-visit": "4.1.2"
   },
