@@ -669,4 +669,30 @@ describe('gridtable to md', () => {
     imageReferences(mdast);
     await assertMD(mdast, 'gt-with-breaks.md');
   });
+
+  it('table with escaped tilde', async () => {
+    const mdast = root([
+      heading(2, text('escaped tilde')),
+      paragraph(text('my ~home')),
+      gridTable([
+        gtBody([
+          gtRow([
+            gtCell(text('Column 1')),
+          ]),
+          gtRow([
+            gtCell(paragraph([
+              text('On OS X:'),
+              brk(),
+              text('1. Open the Finder'),
+              brk(),
+              text('2. under the Go menu, select "Go To Folder"'),
+              brk(),
+              text('3. in the window that opens, type: ~/Library/Logs/CreativeCloud/CoreSync/'),
+            ])),
+          ]),
+        ]),
+      ]),
+    ]);
+    await assertMD(mdast, 'gt-escape-tilde.md');
+  });
 });

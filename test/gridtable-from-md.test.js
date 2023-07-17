@@ -60,4 +60,8 @@ describe('gridtable from markdown', () => {
   it('text with breaks', async () => {
     await testMD('gt-with-breaks');
   });
+
+  it('text escaped tilde', async () => {
+    await testMD('gt-with-breaks');
+  });
 });

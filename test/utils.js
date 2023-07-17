@@ -12,6 +12,7 @@
 
 /* eslint-env mocha */
 import assert from 'assert';
+import remarkGfm from 'remark-gfm';
 import { lstat, readFile } from 'fs/promises';
 import stringify from 'remark-stringify';
 import { unified } from 'unified';
@@ -33,6 +34,7 @@ export function mdast2md(mdast) {
       setext: false,
     })
     .use(remarkGridTable)
+    .use(remarkGfm)
     .stringify(mdast);
 }
 
@@ -49,6 +51,7 @@ export async function testMD(spec) {
   const actual = unified()
     .use(remark)
     .use(remarkGridTable)
+    .use(remarkGfm)
     .parse(source);
 
   // convert back. check if round-trip md exists

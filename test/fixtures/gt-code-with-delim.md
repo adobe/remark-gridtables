@@ -1,7 +1,7 @@
 ## Table with delimiters in code
 
 +------------------+
-| `a \+ b = c`     |
+| `a + b = c`      |
 +------------------+
 | ```js            |
 | a \+ b = c;      |
