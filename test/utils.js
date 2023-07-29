@@ -12,8 +12,8 @@
 
 /* eslint-env mocha */
 import assert from 'assert';
-import remarkGfm from 'remark-gfm';
 import { lstat, readFile } from 'fs/promises';
+import remarkGfm from 'remark-gfm';
 import stringify from 'remark-stringify';
 import { unified } from 'unified';
 import remark from 'remark-parse';
