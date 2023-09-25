@@ -15,10 +15,10 @@ Adobe Stock Senior Director, Content, Sarah Casillas echoes Rivas’ sentiments.
 +----------------------------------------------------------+----------------------------------------------------------+
 | Test with trailing \<br>                                 | ## Educational environments                              |
 |                                                          |                                                          |
-|                                                          | -   Aerial images of college campuses and towns;         |
-|                                                          |     landscape of surrounding areas.                      |
-|                                                          | -   Specialized fields of study with contextual cues:    |
-|                                                          |     law, medicine, technology, social sciences           |
+|                                                          | - Aerial images of college campuses and towns; landscape |
+|                                                          |   of surrounding areas.                                  |
+|                                                          | - Specialized fields of study with contextual cues: law, |
+|                                                          |   medicine, technology, social sciences                  |
 +----------------------------------------------------------+----------------------------------------------------------+
 | Test with multiple \<br>s                                | Specialized fields of study with contextual cues: law,   |
 |                                                          | medicine, technology, social sciences                    |

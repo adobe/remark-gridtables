@@ -42,6 +42,7 @@ const md = `
 `;
 
 async function main() {
+  // eslint-disable-next-line no-unused-vars
   const file = await unified()
     .use(remarkParse)
     .use(remarkGridtables)
@@ -54,7 +55,7 @@ async function main() {
     .use(rehypeStringify)
     .process(md);
 
-  console.log(String(file));
+  // console.log(String(file));
 }
 
 main().catch(console.error);

@@ -32,13 +32,13 @@
     "reporter-options": "configFile=.mocha-multi.json"
   },
   "dependencies": {
-    "@adobe/mdast-util-gridtables": "1.0.9",
-    "@adobe/micromark-extension-gridtables": "1.0.4"
+    "@adobe/mdast-util-gridtables": "3.0.0",
+    "@adobe/micromark-extension-gridtables": "2.0.0"
   },
   "devDependencies": {
     "@semantic-release/changelog": "6.0.3",
     "@semantic-release/git": "10.0.1",
-    "@semantic-release/npm": "10.0.6",
+    "@semantic-release/npm": "11.0.0",
     "c8": "8.0.1",
     "eslint": "8.50.0",
     "eslint-config-airbnb-base": "15.0.0",
@@ -46,19 +46,19 @@
     "eslint-plugin-import": "2.28.1",
     "husky": "8.0.3",
     "junit-report-builder": "3.0.1",
-    "lint-staged": "13.3.0",
+    "lint-staged": "14.0.1",
     "mdast-builder": "1.1.1",
     "mocha": "10.2.0",
     "mocha-multi-reporters": "1.5.1",
-    "rehype-format": "4.0.1",
-    "rehype-stringify": "9.0.4",
-    "remark-gfm": "3.0.1",
-    "remark-parse": "10.0.2",
-    "remark-rehype": "10.1.0",
-    "remark-stringify": "10.0.3",
-    "semantic-release": "21.1.2",
-    "unified": "10.1.2",
-    "unist-util-visit": "4.1.2"
+    "rehype-format": "5.0.0",
+    "rehype-stringify": "10.0.0",
+    "remark-gfm": "4.0.0",
+    "remark-parse": "11.0.0",
+    "remark-rehype": "11.0.0",
+    "remark-stringify": "11.0.0",
+    "semantic-release": "22.0.5",
+    "unified": "11.0.3",
+    "unist-util-visit": "5.0.0"
   },
   "lint-staged": {
     "*.js": "eslint",
