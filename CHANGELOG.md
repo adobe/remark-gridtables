@@ -1,3 +1,15 @@
+# [2.0.0](https://github.com/adobe/remark-gridtables/compare/v1.0.4...v2.0.0) (2023-09-25)
+
+
+### Bug Fixes
+
+* **deps:** update external major (major) ([#51](https://github.com/adobe/remark-gridtables/issues/51)) ([0f31a87](https://github.com/adobe/remark-gridtables/commit/0f31a870d99c6474a28e301f3fa438e1f3b1baea))
+
+
+### BREAKING CHANGES
+
+* **deps:** upgrade to micromark 4.x
+
 ## [1.0.4](https://github.com/adobe/remark-gridtables/compare/v1.0.3...v1.0.4) (2023-06-28)
 
 
