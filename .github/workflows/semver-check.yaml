@@ -1,4 +1,4 @@
-name: Semantic Release Comment
+name: Semantic Release
 on:
   push:
     branches-ignore:
@@ -7,7 +7,7 @@ on:
 jobs:
   ci_trigger:
     runs-on: ubuntu-latest
-    name: Comment Semantic Release Status
+    name: Add Comment Status
     steps:
       - name: Comment
         id: comment
