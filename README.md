@@ -4,7 +4,7 @@
 
 ## Status
 [![codecov](https://img.shields.io/codecov/c/github/adobe/remark-gridtables.svg)](https://codecov.io/gh/adobe/remark-gridtables)
-[![Build](https://github.com/adobe/remark-gridtables/actions/workflows/main.yml/badge.svg)](https://github.com/adobe/remark-gridtables)
+![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/adobe/remark-gridtables/main.yaml)
 [![GitHub license](https://img.shields.io/github/license/adobe/remark-gridtables.svg)](https://github.com/adobe/remark-gridtables/blob/master/LICENSE.txt)
 [![GitHub issues](https://img.shields.io/github/issues/adobe/remark-gridtables.svg)](https://github.com/adobe/remark-gridtables/issues)
 [![LGTM Code Quality Grade: JavaScript](https://img.shields.io/lgtm/grade/javascript/g/adobe/remark-gridtables.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/adobe/remark-gridtables)
