@@ -15,6 +15,7 @@
     "test": "c8 mocha",
     "lint": "eslint .",
     "semantic-release": "semantic-release",
+    "semantic-release-dry": "semantic-release --dry-run",
     "prepare": "husky install"
   },
   "repository": {
