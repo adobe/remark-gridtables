@@ -7,7 +7,7 @@ on:
 jobs:
   ci_trigger:
     runs-on: ubuntu-latest
-    name: Add Comment Status
+    name: Add Status Comment
     steps:
       - name: Comment
         id: comment
