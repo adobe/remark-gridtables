@@ -1,3 +1,17 @@
+# [3.0.0](https://github.com/adobe/remark-gridtables/compare/v2.0.2...v3.0.0) (2024-01-29)
+
+
+### Bug Fixes
+
+* **deps:** update external major ([#80](https://github.com/adobe/remark-gridtables/issues/80)) ([1c478b7](https://github.com/adobe/remark-gridtables/commit/1c478b7353731068ec2c4c4a5658c9ce7b0ce9eb))
+
+
+### BREAKING CHANGES
+
+* **deps:** wide code blocks inside cells are line wrapped by inserting a "no-break-here" (U+0083) character.
+
+Co-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>
+
 ## [2.0.2](https://github.com/adobe/remark-gridtables/compare/v2.0.1...v2.0.2) (2023-10-14)
 
 
