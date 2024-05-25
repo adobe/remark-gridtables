@@ -47,7 +47,7 @@
     "eslint-plugin-import": "2.29.1",
     "husky": "9.0.11",
     "junit-report-builder": "3.2.1",
-    "lint-staged": "15.2.2",
+    "lint-staged": "15.2.5",
     "mdast-builder": "1.1.1",
     "mocha": "10.4.0",
     "mocha-multi-reporters": "1.5.1",
