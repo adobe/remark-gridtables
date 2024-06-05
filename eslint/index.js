@@ -1,5 +1,5 @@
 /*
- * Copyright 2022 Adobe. All rights reserved.
+ * Copyright 2019 Adobe. All rights reserved.
  * This file is licensed to you under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License. You may obtain a copy
  * of the License at http://www.apache.org/licenses/LICENSE-2.0
@@ -9,25 +9,42 @@
  * OF ANY KIND, either express or implied. See the License for the specific language
  * governing permissions and limitations under the License.
  */
-module.exports = {
-  root: true,
-  extends: [
-    'eslint-config-airbnb-base',
-  ].map(require.resolve),
+import globals from 'globals';
+import header from './plugins/header/index.cjs';
 
-  env: {
-    node: true,
-    es6: true,
-  },
-  parserOptions: {
+import bestPractices from './rules/best-practices.js';
+import errors from './rules/errors.js';
+import es6 from './rules/es6.js';
+import node from './rules/node.js';
+import strict from './rules/strict.js';
+import style from './rules/style.js';
+import variables from './rules/variables.js';
+
+const common = {
+  languageOptions: {
+    ecmaVersion: 2022,
     sourceType: 'module',
-    ecmaVersion: 2020,
+    globals: {
+      ...globals.node,
+      ...globals.es6,
+      '__rootdir': true,
+    },
   },
-  plugins: [
-    'header',
-  ],
+  plugins: {
+    header,
+  },
   rules: {
+    ...bestPractices.rules,
+    ...errors.rules,
+    ...es6.rules,
+    ...node.rules,
+    ...strict.rules,
+    ...style.rules,
+    ...variables.rules,
+
     strict: 0,
+
+    'import/prefer-default-export': 0,
 
     // Forbid multiple statements in one line
     'max-statements-per-line': ['error', { max: 1 }],
@@ -46,6 +63,7 @@ module.exports = {
     // allow '_' as a throw-away variable
     'no-unused-vars': ['error', {
       argsIgnorePattern: '^_$',
+      varsIgnorePattern: '^_$',
     }],
 
     'no-shadow': ['error', {
@@ -53,11 +71,11 @@ module.exports = {
     }],
 
     // don't enforce extension rules
-    'import/extensions': 0,
+    // 'import/extensions': [2, 'ignorePackages'],
 
     // enforce license header
     'header/header': [2, 'block', ['',
-      { pattern: ' * Copyright \\d{4} Adobe\\. All rights reserved\\.', template: ' * Copyright 2022 Adobe. All rights reserved.' },
+      { pattern: ' * Copyright \\d{4} Adobe\\. All rights reserved\\.', template: ' * Copyright 2024 Adobe. All rights reserved.' },
       ' * This file is licensed to you under the Apache License, Version 2.0 (the "License");',
       ' * you may not use this file except in compliance with the License. You may obtain a copy',
       ' * of the License at http://www.apache.org/licenses/LICENSE-2.0',
@@ -73,4 +91,34 @@ module.exports = {
       properties: true,
     }],
   },
+  files: ['*.js'],
+  linterOptions: {
+    reportUnusedDisableDirectives: 'off',
+  },
 };
+
+const source = {
+  ...common,
+  files: ['src/*.js', 'src/**/*.js', 'test/dev/*.mjs'],
+};
+
+const test = {
+  ...common,
+  languageOptions: {
+    globals: {
+      ...common.languageOptions.globals,
+      ...globals.mocha,
+      '__testdir': true,
+    },
+  },
+  files: ['test/*.js', 'test/**/*.js'],
+};
+
+export default [
+  {
+    ...source,
+  },
+  {
+    ...test,
+  }
+];
