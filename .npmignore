@@ -11,7 +11,7 @@
 .npmignore
 .nycrc.json
 .releaserc.cjs
-.renovaterc.json
+renovate.json
 coverage
 junit
 node_modules/
