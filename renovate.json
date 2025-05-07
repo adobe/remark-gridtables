@@ -1,37 +1,60 @@
 {
   "extends": [
-    "config:base",
-    ":semanticCommits",
-    ":autodetectPinVersions"
+    "config:recommended",
+    ":semanticCommits"
   ],
   "timezone": "Europe/Zurich",
   "branchPrefix": "renovate-",
   "packageRules": [
     {
-      "packageNames": ["circleci/node"],
+      "matchPackageNames": [
+        "circleci/node"
+      ],
       "allowedVersions": "<15"
     },
     {
-      "packageNames": ["cimg/node"],
+      "matchPackageNames": [
+        "cimg/node"
+      ],
       "allowedVersions": "<15"
     },
     {
       "groupName": "external fixes",
-      "updateTypes": ["patch", "pin", "digest", "minor"],
+      "matchUpdateTypes": [
+        "patch",
+        "pin",
+        "digest",
+        "minor"
+      ],
       "automerge": true,
-      "schedule": ["after 2pm on Saturday"],
-      "packagePatterns": ["^.+"]
+      "schedule": [
+        "after 2pm on Saturday"
+      ],
+      "matchPackageNames": [
+        "/^.+/"
+      ]
     },
     {
       "groupName": "external major",
-      "updateTypes": ["major"],
+      "matchUpdateTypes": [
+        "major"
+      ],
       "automerge": false,
-      "packagePatterns": ["^.+"],
-      "schedule": ["after 2pm on Monday"]
+      "schedule": [
+        "after 2pm on Monday"
+      ],
+      "matchPackageNames": [
+        "/^.+/"
+      ]
     },
     {
-      "datasources": ["orb"],
-      "updateTypes": ["patch", "minor"],
+      "matchDatasources": [
+        "orb"
+      ],
+      "matchUpdateTypes": [
+        "patch",
+        "minor"
+      ],
       "automerge": true
     }
   ]
