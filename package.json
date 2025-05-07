@@ -33,7 +33,7 @@
     "reporter-options": "configFile=.mocha-multi.json"
   },
   "dependencies": {
-    "@adobe/mdast-util-gridtables": "4.0.11",
+    "@adobe/mdast-util-gridtables": "4.0.12",
     "@adobe/micromark-extension-gridtables": "2.0.3"
   },
   "devDependencies": {
@@ -45,7 +45,7 @@
     "eslint": "9.26.0",
     "husky": "9.1.7",
     "junit-report-builder": "5.1.1",
-    "lint-staged": "15.5.1",
+    "lint-staged": "15.5.2",
     "mdast-builder": "1.1.1",
     "mocha": "11.2.2",
     "mocha-multi-reporters": "1.5.1",
