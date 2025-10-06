@@ -23,7 +23,7 @@ export function mdast2md(mdast) {
   return unified()
     .use(stringify, {
       strong: '*',
-      emphasis: '_',
+      emphasis: '*',
       bullet: '-',
       fence: '`',
       fences: true,
