@@ -7,7 +7,7 @@ env:
 
 permissions:
   contents: write  # semantic-release-dry verifies the write permissions
-  issues: read # needed by semantic-release
+  issues: write # needed by semantic-release
   pull-requests: write # needed by semantic-release
   id-token: write # needed for npm trusted publishers with OIDC
 
