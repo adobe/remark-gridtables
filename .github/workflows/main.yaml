@@ -5,16 +5,22 @@ env:
   CI_BUILD_NUM: ${{ github.run_id }}
   CI_BRANCH: ${{ github.ref_name }}
 
+permissions:
+  contents: write  # semantic-release-dry verifies the write permissions
+  issues: write # needed by semantic-release
+  pull-requests: write # needed by semantic-release
+  id-token: write # needed for npm trusted publishers with OIDC
+
 jobs:
   test:
     name: Test
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v5
-      - name: Use Node.js 20.x
+      - name: Use Node.js 24.x
         uses: actions/setup-node@v5
         with:
-          node-version: '22.x'
+          node-version: '24.x'
       - run: npm ci
       - run: npm test
       - uses: codecov/codecov-action@v5
@@ -33,10 +39,10 @@ jobs:
     if: github.ref == 'refs/heads/main'
     steps:
       - uses: actions/checkout@v5
-      - name: Use Node.js 20.x
+      - name: Use Node.js 24.x
         uses: actions/setup-node@v5
         with:
-          node-version: '22.x'
+          node-version: '24.x'
       - run: npm ci
       - run: npm run semantic-release
         env:
