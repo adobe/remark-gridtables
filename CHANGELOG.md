@@ -1,3 +1,10 @@
+## [3.0.17](https://github.com/adobe/remark-gridtables/compare/v3.0.16...v3.0.17) (2026-01-24)
+
+
+### Bug Fixes
+
+* **deps:** update external fixes ([#192](https://github.com/adobe/remark-gridtables/issues/192)) ([318f37b](https://github.com/adobe/remark-gridtables/commit/318f37b8fb63806822b7aef46117932446febc1b))
+
 ## [3.0.16](https://github.com/adobe/remark-gridtables/compare/v3.0.15...v3.0.16) (2025-12-06)
 
 
