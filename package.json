@@ -33,7 +33,7 @@
     "reporter-options": "configFile=.mocha-multi.json"
   },
   "dependencies": {
-    "@adobe/mdast-util-gridtables": "4.0.15",
+    "@adobe/mdast-util-gridtables": "4.0.16",
     "@adobe/micromark-extension-gridtables": "2.0.4"
   },
   "devDependencies": {
@@ -57,7 +57,7 @@
     "remark-stringify": "11.0.0",
     "semantic-release": "25.0.2",
     "unified": "11.0.5",
-    "unist-util-visit": "5.0.0"
+    "unist-util-visit": "5.1.0"
   },
   "lint-staged": {
     "*.js": "eslint",
