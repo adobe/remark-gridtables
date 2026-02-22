@@ -1,3 +1,10 @@
+## [3.0.18](https://github.com/adobe/remark-gridtables/compare/v3.0.17...v3.0.18) (2026-02-22)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @adobe/mdast-util-gridtables to v4.0.17 ([#197](https://github.com/adobe/remark-gridtables/issues/197)) ([2263ee0](https://github.com/adobe/remark-gridtables/commit/2263ee00849adf1e5946b1a026a875fd5339b231))
+
 ## [3.0.17](https://github.com/adobe/remark-gridtables/compare/v3.0.16...v3.0.17) (2026-01-24)
 
 
