@@ -42,7 +42,7 @@
     "@semantic-release/npm": "13.1.5",
     "@stylistic/eslint-plugin-js": "4.4.1",
     "c8": "11.0.0",
-    "eslint": "10.1.0",
+    "eslint": "10.2.0",
     "husky": "9.1.7",
     "junit-report-builder": "5.1.1",
     "lint-staged": "16.4.0",
