@@ -7,18 +7,6 @@
   "branchPrefix": "renovate-",
   "packageRules": [
     {
-      "matchPackageNames": [
-        "circleci/node"
-      ],
-      "allowedVersions": "<15"
-    },
-    {
-      "matchPackageNames": [
-        "cimg/node"
-      ],
-      "allowedVersions": "<15"
-    },
-    {
       "groupName": "external fixes",
       "matchUpdateTypes": [
         "patch",
@@ -48,9 +36,6 @@
       ]
     },
     {
-      "matchDatasources": [
-        "orb"
-      ],
       "matchUpdateTypes": [
         "patch",
         "minor"
